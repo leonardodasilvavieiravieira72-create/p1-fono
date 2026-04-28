@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clínica de Fonoaudiologia | Comunicação e Bem-estar</title>
+    <meta name="description" content="Especialistas em Linguagem Infantil, Voz Profissional e Reabilitação Auditiva. Agende sua consulta.">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Phosphor Icons -->
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Outfit', 'sans-serif'],
+                    },
+                    colors: {
+                        brand: {
+                            50: '#f0f9ff',
+                            100: '#e0f2fe',
+                            200: '#bae6fd',
+                            300: '#7dd3fc',
+                            400: '#38bdf8',
+                            500: '#0ea5e9',
+                            600: '#0284c7',
+                            700: '#0369a1',
+                            800: '#075985',
+                            900: '#0c4a6e',
+                        }
+                    },
+                    animation: {
+                        'fade-in-up': 'fadeInUp 0.8s ease-out forwards',
+                    },
+                    keyframes: {
+                        fadeInUp: {
+                            '0%': { opacity: '0', transform: 'translateY(20px)' },
+                            '100%': { opacity: '1', transform: 'translateY(0)' },
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        /* Custom Utilities */
+        .glass-card {
+            background: rgba(255, 255, 255, 0.7);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+        }
+        .text-balance {
+            text-wrap: balance;
+        }
+    </style>
+</head>
+<body class="font-sans text-slate-800 bg-brand-50 antialiased selection:bg-brand-200 selection:text-brand-900">
+
+    <!-- Header / Navbar -->
+    <header class="fixed w-full top-0 z-50 glass-card transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <div class="flex-shrink-0 flex items-center gap-2">
+                    <i class="ph-fill ph-waves text-brand-600 text-3xl"></i>
+                    <span class="font-bold text-xl tracking-tight text-brand-900">FonoClinic</span>
+                </div>
+                <nav class="hidden md:flex space-x-8">
+                    <a href="#hero" class="text-slate-600 hover:text-brand-600 font-medium transition-colors">Início</a>
+                    <a href="#servicos" class="text-slate-600 hover:text-brand-600 font-medium transition-colors">Serviços</a>
+                    <a href="#sobre" class="text-slate-600 hover:text-brand-600 font-medium transition-colors">Sobre Mim</a>
+                    <a href="#depoimentos" class="text-slate-600 hover:text-brand-600 font-medium transition-colors">Depoimentos</a>
+                </nav>
+                <div class="hidden md:flex">
+                    <a href="#contato" class="bg-brand-600 hover:bg-brand-700 text-white px-6 py-2.5 rounded-full font-medium transition-all shadow-md hover:shadow-lg transform hover:-translate-y-0.5">
+                        Agendar Consulta
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="hero" class="relative pt-32 pb-20 lg:pt-48 lg:pb-32 overflow-hidden">
+        <!-- Decorational blobs -->
+        <div class="absolute top-0 left-0 w-full h-full overflow-hidden -z-10 pointer-events-none">
+            <div class="absolute -top-40 -right-40 w-96 h-96 bg-brand-200 rounded-full mix-blend-multiply filter blur-3xl opacity-70 animate-blob"></div>
+            <div class="absolute top-40 -left-40 w-96 h-96 bg-blue-200 rounded-full mix-blend-multiply filter blur-3xl opacity-70 animate-blob animation-delay-2000"></div>
+            <div class="absolute -bottom-40 left-20 w-96 h-96 bg-cyan-200 rounded-full mix-blend-multiply filter blur-3xl opacity-70 animate-blob animation-delay-4000"></div>
+        </div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <div class="text-center lg:text-left opacity-0 animate-fade-in-up">
+                    <span class="inline-block py-1 px-3 rounded-full bg-brand-100 text-brand-700 text-sm font-semibold tracking-wide mb-4">
+                        Acolhimento & Cuidado
+                    </span>
+                    <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold text-brand-900 leading-tight mb-6 text-balance">
+                        Dê voz ao que realmente <span class="text-transparent bg-clip-text bg-gradient-to-r from-brand-600 to-cyan-500">importa.</span>
+                    </h1>
+                    <p class="text-lg md:text-xl text-slate-600 mb-8 max-w-2xl mx-auto lg:mx-0">
+                        Especialistas em comunicação, fala e audição. Oferecemos um atendimento humanizado para ajudar você e sua família a se conectarem com o mundo.
+                    </p>
+                    <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
+                        <a href="#contato" class="bg-brand-600 hover:bg-brand-700 text-white px-8 py-4 rounded-full font-semibold text-lg transition-all shadow-xl shadow-brand-200 hover:shadow-2xl hover:shadow-brand-300 transform hover:-translate-y-1 flex items-center justify-center gap-2">
+                            Agendar Consulta <i class="ph-bold ph-arrow-right"></i>
+                        </a>
+                        <a href="#servicos" class="bg-white hover:bg-brand-50 text-brand-700 border border-brand-200 px-8 py-4 rounded-full font-semibold text-lg transition-all flex items-center justify-center">
+                            Conhecer Serviços
+                        </a>
+                    </div>
+                </div>
+                <div class="relative lg:ml-auto opacity-0 animate-fade-in-up" style="animation-delay: 0.2s;">
+                    <div class="relative rounded-3xl overflow-hidden shadow-2xl aspect-[4/5] max-w-md mx-auto">
+                        <img src="https://images.unsplash.com/photo-1576091160550-2173dba999ef?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Fonoaudióloga atendendo paciente de forma acolhedora" class="object-cover w-full h-full">
+                        <div class="absolute inset-0 bg-gradient-to-t from-brand-900/60 to-transparent"></div>
+                    </div>
+                    <!-- Floating card -->
+                    <div class="absolute -bottom-6 -left-6 bg-white p-4 rounded-2xl shadow-xl flex items-center gap-4 glass-card border-none">
+                        <div class="bg-green-100 p-3 rounded-full text-green-600">
+                            <i class="ph-fill ph-smiley text-2xl"></i>
+                        </div>
+                        <div>
+                            <p class="text-sm text-slate-500 font-medium">Pacientes Satisfeitos</p>
+                            <p class="text-xl font-bold text-slate-800">+1.000</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="servicos" class="py-24 bg-white relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <h2 class="text-brand-600 font-semibold tracking-wide uppercase text-sm mb-2">Nossas Especialidades</h2>
+                <h3 class="text-3xl md:text-4xl font-bold text-brand-900 mb-4">Cuidado completo para sua comunicação</h3>
+                <p class="text-slate-600 text-lg">Abordagens modernas e baseadas em evidências para todas as idades.</p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Card 1 -->
+                <div class="group bg-brand-50 rounded-3xl p-8 hover:bg-brand-600 transition-all duration-300 hover:shadow-2xl hover:-translate-y-2 cursor-pointer">
+                    <div class="w-14 h-14 bg-white rounded-2xl flex items-center justify-center text-brand-600 mb-6 group-hover:scale-110 transition-transform shadow-sm">
+                        <i class="ph-fill ph-baby text-3xl"></i>
+                    </div>
+                    <h4 class="text-xl font-bold text-brand-900 mb-3 group-hover:text-white transition-colors">Linguagem Infantil</h4>
+                    <p class="text-slate-600 group-hover:text-brand-100 transition-colors leading-relaxed">
+                        Avaliação e intervenção nos atrasos de fala, distúrbios de linguagem e dificuldades de aprendizagem, promovendo o desenvolvimento pleno do seu filho.
+                    </p>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="group bg-brand-50 rounded-3xl p-8 hover:bg-brand-600 transition-all duration-300 hover:shadow-2xl hover:-translate-y-2 cursor-pointer">
+                    <div class="w-14 h-14 bg-white rounded-2xl flex items-center justify-center text-brand-600 mb-6 group-hover:scale-110 transition-transform shadow-sm">
+                        <i class="ph-fill ph-microphone-stage text-3xl"></i>
+                    </div>
+                    <h4 class="text-xl font-bold text-brand-900 mb-3 group-hover:text-white transition-colors">Voz Profissional</h4>
+                    <p class="text-slate-600 group-hover:text-brand-100 transition-colors leading-relaxed">
+                        Treinamento e aprimoramento vocal para professores, cantores, palestrantes e profissionais que dependem da voz como instrumento principal de trabalho.
+                    </p>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="group bg-brand-50 rounded-3xl p-8 hover:bg-brand-600 transition-all duration-300 hover:shadow-2xl hover:-translate-y-2 cursor-pointer">
+                    <div class="w-14 h-14 bg-white rounded-2xl flex items-center justify-center text-brand-600 mb-6 group-hover:scale-110 transition-transform shadow-sm">
+                        <i class="ph-fill ph-ear text-3xl"></i>
+                    </div>
+                    <h4 class="text-xl font-bold text-brand-900 mb-3 group-hover:text-white transition-colors">Reabilitação Auditiva</h4>
+                    <p class="text-slate-600 group-hover:text-brand-100 transition-colors leading-relaxed">
+                        Acompanhamento especializado para adaptação de aparelhos auditivos e treinamento auditivo, resgatando a qualidade de vida e a interação social.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="sobre" class="py-24 bg-brand-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid lg:grid-cols-2 gap-16 items-center">
+                <div class="relative">
+                    <div class="aspect-square rounded-full overflow-hidden border-8 border-white shadow-2xl relative z-10 max-w-md mx-auto">
+                        <img src="https://images.unsplash.com/photo-1594824436998-d8bd49f57215?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Retrato da Fonoaudióloga" class="object-cover w-full h-full">
+                    </div>
+                    <!-- Decoration element -->
+                    <div class="absolute top-1/2 -left-8 transform -translate-y-1/2 text-brand-200 text-9xl z-0 opacity-50">
+                        <i class="ph-fill ph-quotes"></i>
+                    </div>
+                </div>
+                <div>
+                    <h2 class="text-brand-600 font-semibold tracking-wide uppercase text-sm mb-2">Sobre Mim</h2>
+                    <h3 class="text-3xl md:text-4xl font-bold text-brand-900 mb-6">Dra. Camila Ferreira</h3>
+                    <div class="space-y-4 text-slate-600 text-lg leading-relaxed">
+                        <p>
+                            Olá! Sou fonoaudióloga formada pela Universidade Federal, com mais de 10 anos de experiência clínica dedicada a transformar vidas através da comunicação.
+                        </p>
+                        <p>
+                            Minha paixão é ajudar crianças a descobrirem o mundo das palavras e adultos a recuperarem ou aprimorarem sua voz e audição. Acredito em um atendimento empático, onde cada paciente é único e o tratamento é construído em parceria com a família.
+                        </p>
+                        <p>
+                            Possuo especialização em Linguagem Infantil e aprimoramento em Voz Profissional, mantendo-me sempre atualizada com as melhores práticas e tecnologias da área.
+                        </p>
+                    </div>
+                    <div class="mt-8 pt-8 border-t border-brand-200">
+                        <div class="flex items-center gap-4">
+                            <div class="bg-brand-100 p-3 rounded-full text-brand-600">
+                                <i class="ph-fill ph-certificate text-2xl"></i>
+                            </div>
+                            <div>
+                                <p class="font-semibold text-brand-900">CRFa 12345-RJ</p>
+                                <p class="text-sm text-slate-500">Especialista pelo CFFa</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="depoimentos" class="py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <h2 class="text-brand-600 font-semibold tracking-wide uppercase text-sm mb-2">Histórias de Sucesso</h2>
+                <h3 class="text-3xl md:text-4xl font-bold text-brand-900 mb-4">O que dizem nossos pacientes</h3>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Testimonial 1 -->
+                <div class="bg-brand-50 p-8 rounded-3xl relative">
+                    <i class="ph-fill ph-quotes text-brand-200 text-4xl absolute top-6 right-6"></i>
+                    <div class="flex items-center gap-1 mb-4 text-yellow-400">
+                        <i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i>
+                    </div>
+                    <p class="text-slate-600 mb-6 italic">
+                        "O desenvolvimento do meu filho após iniciar as sessões de linguagem foi incrível. O acolhimento e a didática da Dra. Camila fizeram toda a diferença. Ele adora ir para a terapia!"
+                    </p>
+                    <div class="flex items-center gap-4">
+                        <div class="w-12 h-12 bg-brand-200 rounded-full flex items-center justify-center text-brand-700 font-bold text-xl">M</div>
+                        <div>
+                            <p class="font-bold text-brand-900">Mariana S.</p>
+                            <p class="text-sm text-slate-500">Mãe do Lucas (4 anos)</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 2 -->
+                <div class="bg-brand-50 p-8 rounded-3xl relative">
+                    <i class="ph-fill ph-quotes text-brand-200 text-4xl absolute top-6 right-6"></i>
+                    <div class="flex items-center gap-1 mb-4 text-yellow-400">
+                        <i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i>
+                    </div>
+                    <p class="text-slate-600 mb-6 italic">
+                        "Como professor, eu sofria constantemente com rouquidão. O treinamento vocal não só resolveu meu problema como me ensinou a usar minha voz de forma muito mais eficiente e sem esforço."
+                    </p>
+                    <div class="flex items-center gap-4">
+                        <div class="w-12 h-12 bg-brand-200 rounded-full flex items-center justify-center text-brand-700 font-bold text-xl">R</div>
+                        <div>
+                            <p class="font-bold text-brand-900">Roberto T.</p>
+                            <p class="text-sm text-slate-500">Professor Universitário</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 3 -->
+                <div class="bg-brand-50 p-8 rounded-3xl relative hidden lg:block">
+                    <i class="ph-fill ph-quotes text-brand-200 text-4xl absolute top-6 right-6"></i>
+                    <div class="flex items-center gap-1 mb-4 text-yellow-400">
+                        <i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i>
+                    </div>
+                    <p class="text-slate-600 mb-6 italic">
+                        "A reabilitação auditiva me devolveu o prazer de conversar com meus netos. O processo de adaptação do aparelho foi conduzido com muita paciência e profissionalismo."
+                    </p>
+                    <div class="flex items-center gap-4">
+                        <div class="w-12 h-12 bg-brand-200 rounded-full flex items-center justify-center text-brand-700 font-bold text-xl">A</div>
+                        <div>
+                            <p class="font-bold text-brand-900">Antônio C.</p>
+                            <p class="text-sm text-slate-500">Paciente</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contato" class="bg-brand-900 text-brand-100 py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-4 gap-12 lg:gap-8">
+                <div class="md:col-span-2">
+                    <div class="flex items-center gap-2 mb-6">
+                        <i class="ph-fill ph-waves text-brand-400 text-3xl"></i>
+                        <span class="font-bold text-2xl tracking-tight text-white">FonoClinic</span>
+                    </div>
+                    <p class="text-brand-200 max-w-sm mb-8 leading-relaxed">
+                        Cuidando da sua comunicação com excelência, empatia e dedicação. Agende uma avaliação e dê o primeiro passo para uma melhor qualidade de vida.
+                    </p>
+                    <div class="flex gap-4">
+                        <a href="#" class="w-10 h-10 rounded-full bg-brand-800 flex items-center justify-center hover:bg-brand-600 hover:text-white transition-colors">
+                            <i class="ph-fill ph-instagram-logo text-xl"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 rounded-full bg-brand-800 flex items-center justify-center hover:bg-brand-600 hover:text-white transition-colors">
+                            <i class="ph-fill ph-facebook-logo text-xl"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 rounded-full bg-brand-800 flex items-center justify-center hover:bg-green-500 hover:text-white transition-colors">
+                            <i class="ph-fill ph-whatsapp-logo text-xl"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div>
+                    <h4 class="text-white font-semibold mb-6">Contatos</h4>
+                    <ul class="space-y-4">
+                        <li class="flex items-start gap-3">
+                            <i class="ph-fill ph-whatsapp-logo text-brand-400 text-xl mt-0.5"></i>
+                            <div>
+                                <p class="font-medium text-white">(11) 98765-4321</p>
+                                <p class="text-sm text-brand-300">WhatsApp Comercial</p>
+                            </div>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <i class="ph-fill ph-envelope-simple text-brand-400 text-xl mt-0.5"></i>
+                            <div>
+                                <p class="font-medium text-white">contato@fonoclinic.com</p>
+                            </div>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <i class="ph-fill ph-map-pin text-brand-400 text-xl mt-0.5"></i>
+                            <div>
+                                <p class="font-medium text-white">Av. Paulista, 1000 - Sala 402</p>
+                                <p class="text-sm text-brand-300">Bela Vista, São Paulo - SP</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="text-white font-semibold mb-6">Atendimento</h4>
+                    <ul class="space-y-3">
+                        <li class="flex justify-between border-b border-brand-800 pb-2">
+                            <span class="text-brand-200">Segunda - Sexta</span>
+                            <span class="text-white">08:00 - 18:00</span>
+                        </li>
+                        <li class="flex justify-between border-b border-brand-800 pb-2">
+                            <span class="text-brand-200">Sábado</span>
+                            <span class="text-white">08:00 - 12:00</span>
+                        </li>
+                        <li class="flex justify-between pb-2">
+                            <span class="text-brand-200">Domingo</span>
+                            <span class="text-brand-400">Fechado</span>
+                        </li>
+                    </ul>
+                    <a href="#" class="mt-6 w-full bg-brand-600 hover:bg-brand-500 text-white px-6 py-3 rounded-xl font-medium transition-colors flex items-center justify-center gap-2">
+                        Agendar via WhatsApp
+                    </a>
+                </div>
+            </div>
+            
+            <div class="mt-16 pt-8 border-t border-brand-800 flex flex-col md:flex-row justify-between items-center gap-4">
+                <p class="text-brand-300 text-sm">
+                    &copy; 2026 Clínica FonoClinic. Todos os direitos reservados.
+                </p>
+                <div class="text-brand-400 text-sm">
+                    Desenvolvido com excelência
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
